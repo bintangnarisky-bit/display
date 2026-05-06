@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Antrian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="display">
+
+<h1>NOMOR ANTRIAN</h1>
+<div id="displayNomor">A000</div>
+
+<script>
+setInterval(() => {
+    let nomor = localStorage.getItem("panggil") || "A000";
+    document.getElementById("displayNomor").innerText = nomor;
+}, 500);
+</script>
+
+</body>
+</html>
